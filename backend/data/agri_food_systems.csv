@@ -1,0 +1,13 @@
+id,title,description,category,tags
+1,Post-harvest losses,Grain spoils in humid storage; smallholders lack dryers and hermetic bags.,Agriculture,"post-harvest,storage,smallholder"
+2,Soil health data gaps,Farmers apply fertilizer blindly; affordable soil testing and digital extension are sparse.,Agriculture,"soil,precision ag,extension"
+3,Livestock disease surveillance,Cross-border animal movement spreads fever viruses; vaccination records are paper-based.,Agriculture,"veterinary,surveillance,trade"
+4,Fisheries overcapacity,Subsidy-driven fleets exceed sustainable catch; monitoring and enforcement are limited offshore.,Logistics,"fisheries,IUU,sustainability"
+5,Urban vertical farm economics,LED and HVAC costs dominate; produce must compete with field-grown imports on price.,Agriculture,"vertical farm,energy,urban"
+6,Fair trade verification,Cooperatives struggle to prove premium payments to consumers; audits are expensive.,Agriculture,"fair trade,traceability,coops"
+7,Agrochemical runoff,Nitrogen and pesticides reach rivers; buffer zones and precision spraying reduce load but need capital.,Agriculture,"runoff,water quality,precision"
+8,Farm labor shortage,Seasonal picking relies on migrant workers with uncertain visas; automation is capital-intensive.,Agriculture,"labor,migration,automation"
+9,Seed sovereignty,Hybrid and patented seeds limit farmer seed-saving; local landrace conservation is underfunded.,Agriculture,"seeds,biodiversity,IP"
+10,Food fraud and adulteration,Olive oil and honey are diluted; lab tests are slow and costly for retailers.,Agriculture,"fraud,authentication,quality"
+11,Climate-smart varieties,Drought-tolerant seeds exist but adoption lags where extension and credit are weak.,Agriculture,"drought,adaptation,seeds"
+12,Aquaculture disease,Dense fish pens spread pathogens; antibiotics raise resistance and export barriers.,Agriculture,"aquaculture,biosecurity,antibiotics"

@@ -1,0 +1,509 @@
+[
+  {
+    "id": 1,
+    "title": "Telehealth access in rural regions",
+    "description": "Patients in remote areas face long waits and poor connectivity for specialist care.",
+    "category": "Healthcare",
+    "tags": [
+      "telehealth",
+      "access",
+      "rural"
+    ],
+    "startup_idea": "A mesh-network telehealth kiosk with offline-first diagnostics."
+  },
+  {
+    "id": 2,
+    "title": "Medication adherence for chronic illness",
+    "description": "Patients forget doses; outcomes worsen and costs rise.",
+    "category": "Healthcare",
+    "tags": [
+      "adherence",
+      "chronic"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 3,
+    "title": "Personalized genomic drug resistance mapping",
+    "description": "Clinicians lack rapid resistance prediction from patient genomic panels.",
+    "category": "Genomics",
+    "tags": [
+      "genomics",
+      "precision"
+    ],
+    "startup_idea": "A clinical decision support layer for resistance likelihood scoring."
+  },
+  {
+    "id": 4,
+    "title": "Mental health triage overload",
+    "description": "Emergency departments cannot prioritize behavioral health cases.",
+    "category": "Healthcare",
+    "tags": [
+      "mental health",
+      "triage"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 5,
+    "title": "Lack of personalized AI career mentorship",
+    "description": "Students receive generic advice instead of adaptive pathways.",
+    "category": "Education",
+    "tags": [
+      "career",
+      "AI"
+    ],
+    "startup_idea": "An AI mentor that maps skills to regional labor demand."
+  },
+  {
+    "id": 6,
+    "title": "Teacher burnout from admin workload",
+    "description": "Educators spend hours on paperwork instead of instruction.",
+    "category": "Education",
+    "tags": [
+      "K-12",
+      "admin"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 7,
+    "title": "STEM engagement in underserved schools",
+    "description": "Labs are underfunded; students lack hands-on projects.",
+    "category": "Education",
+    "tags": [
+      "STEM",
+      "equity"
+    ],
+    "startup_idea": "A low-cost modular robotics kit with curriculum."
+  },
+  {
+    "id": 8,
+    "title": "LLM optimization for edge devices",
+    "description": "On-device models are slow and memory-heavy.",
+    "category": "Technology",
+    "tags": [
+      "LLM",
+      "edge"
+    ],
+    "startup_idea": "A compiler stack that prunes and quantizes models per device class."
+  },
+  {
+    "id": 9,
+    "title": "Data pipeline reliability at scale",
+    "description": "Teams lose trust when pipelines silently drop records.",
+    "category": "Technology",
+    "tags": [
+      "data",
+      "reliability"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 10,
+    "title": "Developer onboarding friction",
+    "description": "New hires take months to understand internal systems.",
+    "category": "Technology",
+    "tags": [
+      "devtools",
+      "onboarding"
+    ],
+    "startup_idea": "An internal knowledge graph with guided tours."
+  },
+  {
+    "id": 11,
+    "title": "Real-time fraud detection for SMB payments",
+    "description": "Small merchants lack adaptive fraud rules.",
+    "category": "FinTech",
+    "tags": [
+      "fraud",
+      "SMB"
+    ],
+    "startup_idea": "A lightweight rules + ML hybrid for payment processors."
+  },
+  {
+    "id": 12,
+    "title": "Credit access for gig workers",
+    "description": "Income volatility makes underwriting difficult.",
+    "category": "FinTech",
+    "tags": [
+      "credit",
+      "gig"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 13,
+    "title": "Cross-border remittance fees",
+    "description": "Migrant workers pay high fees on small transfers.",
+    "category": "FinTech",
+    "tags": [
+      "remittance",
+      "payments"
+    ],
+    "startup_idea": "A stablecoin corridor with compliance automation."
+  },
+  {
+    "id": 14,
+    "title": "Predictive maintenance for maritime supply chains",
+    "description": "Unexpected downtime disrupts global routes.",
+    "category": "Logistics",
+    "tags": [
+      "maritime",
+      "maintenance"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 15,
+    "title": "Last-mile carbon accounting",
+    "description": "Retailers cannot measure per-route emissions accurately.",
+    "category": "Logistics",
+    "tags": [
+      "last mile",
+      "carbon"
+    ],
+    "startup_idea": "Route-level emissions APIs integrated with carriers."
+  },
+  {
+    "id": 16,
+    "title": "Warehouse slotting inefficiency",
+    "description": "Pick paths are suboptimal as SKU mix shifts.",
+    "category": "Logistics",
+    "tags": [
+      "warehouse",
+      "optimization"
+    ],
+    "startup_idea": "Continuous slotting recommendations from order patterns."
+  },
+  {
+    "id": 17,
+    "title": "Micro-plastic filtration at municipal scale",
+    "description": "Treatment plants lack affordable capture tech.",
+    "category": "Sustainability",
+    "tags": [
+      "water",
+      "plastics"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 18,
+    "title": "Building energy retrofit prioritization",
+    "description": "Cities do not know which buildings to retrofit first.",
+    "category": "Sustainability",
+    "tags": [
+      "retrofit",
+      "cities"
+    ],
+    "startup_idea": "A digital twin ranking by ROI and emissions."
+  },
+  {
+    "id": 19,
+    "title": "Supply chain scope 3 data gaps",
+    "description": "Brands cannot collect supplier emissions data.",
+    "category": "Sustainability",
+    "tags": [
+      "scope3",
+      "ESG"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 20,
+    "title": "SMB ransomware resilience",
+    "description": "Small firms lack backups and incident playbooks.",
+    "category": "Cybersecurity",
+    "tags": [
+      "ransomware",
+      "SMB"
+    ],
+    "startup_idea": "Managed resilience kits with immutable backups."
+  },
+  {
+    "id": 21,
+    "title": "Insider threat detection without privacy harm",
+    "description": "Monitoring tools are too invasive.",
+    "category": "Cybersecurity",
+    "tags": [
+      "insider",
+      "privacy"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 22,
+    "title": "Crop disease early warning",
+    "description": "Farmers discover infections too late.",
+    "category": "Agriculture",
+    "tags": [
+      "agtech",
+      "disease"
+    ],
+    "startup_idea": "Drone + phone imagery models for early stress."
+  },
+  {
+    "id": 23,
+    "title": "Water usage optimization in drought regions",
+    "description": "Irrigation schedules are guesswork.",
+    "category": "Agriculture",
+    "tags": [
+      "water",
+      "irrigation"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 24,
+    "title": "Public transit reliability perception",
+    "description": "Riders churn when schedules are unpredictable.",
+    "category": "General",
+    "tags": [
+      "transit",
+      "UX"
+    ],
+    "startup_idea": "A commuter trust score from live ops data."
+  },
+  {
+    "id": 25,
+    "title": "Clinical trial diversity recruitment",
+    "description": "Trials underrepresent key populations.",
+    "category": "Healthcare",
+    "tags": [
+      "trials",
+      "diversity"
+    ],
+    "startup_idea": "Community-matched recruitment workflows."
+  },
+  {
+    "id": 26,
+    "title": "Assessment integrity in online exams",
+    "description": "Schools struggle with proctoring fairness.",
+    "category": "Education",
+    "tags": [
+      "edtech",
+      "integrity"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 27,
+    "title": "Observability cost explosion",
+    "description": "Log volumes crush budgets.",
+    "category": "Technology",
+    "tags": [
+      "observability",
+      "cost"
+    ],
+    "startup_idea": "Adaptive sampling based on anomaly scores."
+  },
+  {
+    "id": 28,
+    "title": "Embedded insurance for marketplaces",
+    "description": "Platforms cannot bundle coverage easily.",
+    "category": "FinTech",
+    "tags": [
+      "embedded",
+      "insurance"
+    ],
+    "startup_idea": "API-first micro-policies for carts."
+  },
+  {
+    "id": 29,
+    "title": "Port congestion forecasting",
+    "description": "Shippers lack forward visibility.",
+    "category": "Logistics",
+    "tags": [
+      "ports",
+      "forecasting"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 30,
+    "title": "Grid-scale battery degradation modeling",
+    "description": "Operators replace packs too early or too late.",
+    "category": "Sustainability",
+    "tags": [
+      "grid",
+      "batteries"
+    ],
+    "startup_idea": "Fleet-level degradation forecasts."
+  },
+  {
+    "id": 31,
+    "title": "Variant interpretation bottleneck",
+    "description": "Labs produce variants faster than curation.",
+    "category": "Genomics",
+    "tags": [
+      "variants",
+      "curation"
+    ],
+    "startup_idea": "An LLM-assisted curation workbench with citations."
+  },
+  {
+    "id": 32,
+    "title": "API key leakage in CI/CD",
+    "description": "Secrets leak in build logs.",
+    "category": "Cybersecurity",
+    "tags": [
+      "secrets",
+      "CI"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 33,
+    "title": "Hospital readmission prediction gaps",
+    "description": "Models do not generalize across sites.",
+    "category": "Healthcare",
+    "tags": [
+      "readmission",
+      "ML"
+    ],
+    "startup_idea": "Federated learning toolkit for hospitals."
+  },
+  {
+    "id": 34,
+    "title": "Parent-teacher communication overload",
+    "description": "Messages scatter across apps.",
+    "category": "Education",
+    "tags": [
+      "K-12",
+      "comms"
+    ],
+    "startup_idea": "Unified threads with translation."
+  },
+  {
+    "id": 35,
+    "title": "Realtime collaboration data conflicts",
+    "description": "CRDT adoption is hard for product teams.",
+    "category": "Technology",
+    "tags": [
+      "CRDT",
+      "collab"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 36,
+    "title": "Treasury cash forecasting for startups",
+    "description": "Finance teams use spreadsheets.",
+    "category": "FinTech",
+    "tags": [
+      "treasury",
+      "forecast"
+    ],
+    "startup_idea": "Cash runway scenarios tied to bank feeds."
+  },
+  {
+    "id": 37,
+    "title": "Cold chain spoilage visibility",
+    "description": "Temperature excursions go unnoticed.",
+    "category": "Logistics",
+    "tags": [
+      "cold chain",
+      "IoT"
+    ],
+    "startup_idea": "Sensor fusion with exception routing."
+  },
+  {
+    "id": 38,
+    "title": "Carbon credit verification fraud",
+    "description": "Offsets lack trust.",
+    "category": "Sustainability",
+    "tags": [
+      "offsets",
+      "verification"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 39,
+    "title": "Nurse scheduling under surge demand",
+    "description": "Hospitals cannot flex staffing quickly.",
+    "category": "Healthcare",
+    "tags": [
+      "scheduling",
+      "ops"
+    ],
+    "startup_idea": "Shift optimization with fatigue constraints."
+  },
+  {
+    "id": 40,
+    "title": "Micro-credential interoperability",
+    "description": "Employers cannot verify stackable badges.",
+    "category": "Education",
+    "tags": [
+      "credentials",
+      "interop"
+    ],
+    "startup_idea": "A wallet for skills attestations."
+  },
+  {
+    "id": 41,
+    "title": "GPU cluster scheduling fairness",
+    "description": "Teams contend for shared clusters.",
+    "category": "Technology",
+    "tags": [
+      "MLOps",
+      "scheduling"
+    ],
+    "startup_idea": "Fair-share schedulers with preemption."
+  },
+  {
+    "id": 42,
+    "title": "Open banking consent UX",
+    "description": "Users revoke access accidentally.",
+    "category": "FinTech",
+    "tags": [
+      "open banking",
+      "UX"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 43,
+    "title": "Autonomous yard operations safety",
+    "description": "Yards mix robots and humans.",
+    "category": "Logistics",
+    "tags": [
+      "autonomy",
+      "safety"
+    ],
+    "startup_idea": "Digital twin hazard zones for yard bots."
+  },
+  {
+    "id": 44,
+    "title": "Soil carbon measurement cost",
+    "description": "Farmers cannot afford frequent soil tests.",
+    "category": "Agriculture",
+    "tags": [
+      "soil",
+      "carbon"
+    ],
+    "startup_idea": "Low-cost sensor meshes with calibration."
+  },
+  {
+    "id": 45,
+    "title": "Zero-day disclosure coordination",
+    "description": "Vendors and researchers lack shared timelines.",
+    "category": "Cybersecurity",
+    "tags": [
+      "disclosure",
+      "coordination"
+    ],
+    "startup_idea": null
+  },
+  {
+    "id": 46,
+    "title": "City open data usability",
+    "description": "Raw tables are hard for civic hackers.",
+    "category": "General",
+    "tags": [
+      "open data",
+      "civic"
+    ],
+    "startup_idea": "Auto-generated narratives from city datasets."
+  }
+]

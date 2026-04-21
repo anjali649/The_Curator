@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — The Curator</title>
+    <script src="/js/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="site-header__row">
+          <a href="/" class="site-brand">
+            <span class="site-brand__mark">C</span>
+            <span class="site-brand__text">
+              <span class="site-brand__title">The Curator</span>
+              <span class="site-brand__sub">Problem Solver</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link nav-link--icon" href="/">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+              Dashboard
+            </a>
+            <a class="nav-link nav-link--icon" href="/problems.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
+              Explorer
+            </a>
+            <a class="nav-link nav-link--icon" href="/startup-ideas.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>
+              Ideas
+            </a>
+            <a class="nav-link nav-link--icon" href="/add-startup.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+              Submit Idea
+            </a>
+            <a class="nav-link nav-link--icon" href="/settings.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              Settings
+            </a>
+          </nav>
+          <a
+            href="/problems.html#explorer-search"
+            class="topbar__search-btn"
+            aria-label="Search problems"
+            title="Search problems"
+          >
+            <svg class="topbar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </a>
+          <a class="header-cta" href="/add-startup.html">+ New Analysis</a>
+          <div class="topbar__actions">
+            <button type="button" class="icon-btn" title="Notifications" aria-label="Notifications">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </button>
+            <a class="topbar__avatar topbar__avatar--active" href="/profile.html" title="Profile">TC</a>
+          </div>
+        </div>
+      </header>
+      <div class="app-body">
+        <div class="main">
+          <header class="page-header">
+            <h1>Profile</h1>
+            <p>Your display preferences and ideas submitted from this browser.</p>
+          </header>
+
+          <div class="profile-hero card">
+            <div class="profile-avatar" id="profile-initials">TC</div>
+            <div style="flex: 1">
+              <h2 style="margin: 0 0 0.25rem; font-size: 1.25rem" id="profile-name">The Curator user</h2>
+              <p class="muted" style="margin: 0; font-size: 0.9rem" id="profile-bio">
+                Add a short bio in Settings → Account.
+              </p>
+              <p class="muted profile-focus-wrap hidden" style="margin: 0.5rem 0 0; font-size: 0.85rem" id="profile-focus">
+                <span class="profile-focus-label">Focus:</span>
+                <span id="profile-focus-text"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="profile-stats" id="profile-stats" aria-label="Your activity">
+            <div class="stat-card">
+              <span class="stat-card__value" id="stat-local-ideas">0</span>
+              <span class="stat-card__label">Ideas logged locally</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value" id="stat-upvotes">0</span>
+              <span class="stat-card__label">Upvotes you gave</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value" id="stat-catalog">—</span>
+              <span class="stat-card__label">Problems in catalog</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__value" id="stat-since">—</span>
+              <span class="stat-card__label">Using The Curator since</span>
+            </div>
+          </div>
+
+          <div class="profile-actions card">
+            <a class="btn btn--primary" href="/settings.html">Edit profile &amp; settings</a>
+            <a class="btn btn--ghost" href="/add-startup.html">Submit a new idea</a>
+            <button type="button" class="btn btn--ghost" id="btn-export-local">Export local data (JSON)</button>
+          </div>
+
+          <h2 style="font-size: 1rem; margin: 1.5rem 0 0.75rem">Your ideas (this device)</h2>
+          <p class="muted" style="font-size: 0.875rem; margin: 0 0 1rem">
+            Tracked locally when you submit from this browser — not tied to a login yet.
+          </p>
+          <div id="my-ideas"></div>
+
+          <h2 style="font-size: 1rem; margin: 1.5rem 0 0.75rem">Joined startups</h2>
+          <p class="muted" style="font-size: 0.875rem; margin: 0 0 1rem">
+            Startups you marked as “Join this Startup”.
+          </p>
+          <div id="joined-startups"></div>
+
+          <h2 style="font-size: 1rem; margin: 1.5rem 0 0.75rem">Recent community submissions</h2>
+          <div id="community-feed"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/api.js?v=20260415a"></script>
+    <script src="/js/profile.js?v=20260415a"></script>
+  </body>
+</html>

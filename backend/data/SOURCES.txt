@@ -1,0 +1,7 @@
+Supplemental datasets are merged by services/dataset_service.py — see DATASETS.md for names, row counts, sources, and how each file is used.
+
+Quick reference:
+- sdg_targets.csv — normalized UN SDG targets for the app (raw duplicate removed from repo).
+- cfpb_complaints_sample.csv — educational samples only; real data: https://www.consumerfinance.gov/data-research/consumer-complaints/
+- innovation_policy_gaps_1k.csv — 1200 synthetic rows; script: scripts/generate_innovation_policy_gaps.py
+- large_synthetic_problems.csv — 8000 synthetic rows; script: scripts/generate_large_synthetic_csv.py

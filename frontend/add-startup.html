@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Idea — The Curator</title>
+    <script src="/js/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="site-header__row">
+          <a href="/" class="site-brand">
+            <span class="site-brand__mark">C</span>
+            <span class="site-brand__text">
+              <span class="site-brand__title">The Curator</span>
+              <span class="site-brand__sub">Problem Solver</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link nav-link--icon" href="/">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+              Dashboard
+            </a>
+            <a class="nav-link nav-link--icon" href="/problems.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
+              Explorer
+            </a>
+            <a class="nav-link nav-link--icon" href="/startup-ideas.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>
+              Ideas
+            </a>
+            <a class="nav-link nav-link--icon is-active" href="/add-startup.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+              Submit Idea
+            </a>
+            <a class="nav-link nav-link--icon" href="/settings.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              Settings
+            </a>
+          </nav>
+          <a
+            href="/problems.html#explorer-search"
+            class="topbar__search-btn"
+            aria-label="Search problems"
+            title="Search problems"
+          >
+            <svg class="topbar__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </a>
+          <a class="header-cta" href="/add-startup.html">+ New Analysis</a>
+          <div class="topbar__actions">
+            <button type="button" class="icon-btn" title="Notifications" aria-label="Notifications">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </button>
+            <a class="topbar__avatar" href="/profile.html" title="Profile">TC</a>
+          </div>
+        </div>
+      </header>
+      <div class="app-body">
+        <div class="main">
+          <header class="page-header">
+            <h1>Submit a startup idea</h1>
+            <p>Link your concept to a dataset problem. Optional AI assist when the server has an API key.</p>
+          </header>
+
+          <div class="form-page-grid">
+            <div>
+              <div id="form-msg" class="msg hidden"></div>
+              <form id="startup-form" class="form">
+                <div class="form-group">
+                  <label for="problem-select">Select problem</label>
+                  <select id="problem-select" required></select>
+                </div>
+                <div id="custom-problem-block" class="form-group hidden">
+                  <p class="muted" style="margin: 0 0 0.75rem; font-size: 0.875rem">
+                    <strong>Add your own:</strong> describe the problem you are solving. It is saved to the catalog and linked to your startup idea below.
+                  </p>
+                  <label for="custom-problem-title">Your problem title</label>
+                  <input
+                    id="custom-problem-title"
+                    type="text"
+                    maxlength="300"
+                    placeholder="e.g. Last-mile refunds for micro-merchants"
+                    autocomplete="off"
+                  />
+                  <label for="custom-problem-desc" style="margin-top: 0.85rem">Your problem statement</label>
+                  <textarea
+                    id="custom-problem-desc"
+                    minlength="20"
+                    placeholder="Who is affected, what fails today, and why it matters (at least 20 characters)."
+                    style="min-height: 100px"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="title">Startup idea title</label>
+                  <input id="title" type="text" required maxlength="200" placeholder="e.g. Route-sharing mesh for couriers" />
+                </div>
+                <div class="form-group">
+                  <label for="description">Detailed solution</label>
+                  <textarea id="description" required placeholder="What would you build, and why would it win?"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="problem-solved">Problem this startup solves</label>
+                  <textarea
+                    id="problem-solved"
+                    required
+                    minlength="10"
+                    placeholder="Clearly state the main problem this startup solves."
+                    style="min-height: 90px"
+                  ></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="audience">Target audience</label>
+                    <input id="audience" type="text" maxlength="500" />
+                  </div>
+                  <div class="form-group">
+                    <label for="impact">Expected impact</label>
+                    <input id="impact" type="text" maxlength="500" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn--primary" style="width: 100%; max-width: 100%">
+                  Launch idea to the incubator
+                </button>
+              </form>
+
+              <div class="card" style="margin-top: 2rem">
+                <div class="card__label">Optional: AI suggestion (Gemini)</div>
+                <p class="muted" style="margin: 0.5rem 0">
+                  Paste context. Requires <code>GEMINI_API_KEY</code> on the server (Gemini).
+                </p>
+                <textarea id="ai-desc" placeholder="Describe the problem…" style="min-height: 80px"></textarea>
+                <button type="button" class="btn btn--ghost" id="btn-ai" style="margin-top: 0.5rem">Generate angles</button>
+                <div id="ai-out" class="muted" style="margin-top: 0.75rem"></div>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <div class="card__label">Curator's tip</div>
+                <p class="muted" style="margin: 0.5rem 0 0.75rem; font-size: 0.875rem">
+                  Tie your idea to a measurable outcome for the problem owner.
+                </p>
+                <div style="height: 8px; background: #e5e7eb; border-radius: 9999px; overflow: hidden">
+                  <div id="curator-tip-bar" style="height: 100%; width: 40%; background: #4f46e5; border-radius: 9999px"></div>
+                </div>
+              </div>
+              <div class="card" style="margin-top: 1rem">
+                <div class="card__label">Urgent needs</div>
+                <ul id="urgent-needs" class="muted" style="font-size: 0.875rem; padding-left: 1.1rem"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/add-startup.js"></script>
+  </body>
+</html>

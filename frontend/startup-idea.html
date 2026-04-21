@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Idea — The Curator</title>
+    <script src="/js/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="site-header">
+        <div class="site-header__row">
+          <a href="/" class="site-brand">
+            <span class="site-brand__mark">C</span>
+            <span class="site-brand__text">
+              <span class="site-brand__title">The Curator</span>
+              <span class="site-brand__sub">Problem Solver</span>
+            </span>
+          </a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link nav-link--icon" href="/">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+              Dashboard
+            </a>
+            <a class="nav-link nav-link--icon" href="/problems.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
+              Explorer
+            </a>
+            <a class="nav-link nav-link--icon is-active" href="/startup-ideas.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg>
+              Ideas
+            </a>
+            <a class="nav-link nav-link--icon" href="/add-startup.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+              Submit Idea
+            </a>
+            <a class="nav-link nav-link--icon" href="/settings.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              Settings
+            </a>
+          </nav>
+          <a class="header-cta" href="/add-startup.html">+ New Analysis</a>
+          <div class="topbar__actions">
+            <a class="topbar__avatar" href="/profile.html" title="Profile">TC</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="app-body">
+        <div class="main">
+          <div id="startup-error" class="msg msg--error hidden"></div>
+          <nav class="breadcrumb" id="s-breadcrumb" aria-label="Breadcrumb"></nav>
+          <section class="card startup-detail-shell" aria-live="polite">
+            <div class="startup-overview__section-head">
+              <h1 id="s-title">Startup idea</h1>
+              <span class="idea-card__tag" id="s-category-badge">Loading…</span>
+            </div>
+            <p id="s-description" class="startup-overview__description muted"></p>
+
+            <div class="startup-detail-grid">
+              <div class="startup-detail-main">
+                <div class="startup-overview__section">
+                  <h2 class="startup-detail-title">Detailed description</h2>
+                  <p id="s-long" class="startup-overview__description muted"></p>
+                  <div id="s-dataset-context" class="startup-data-context muted">Loading dataset context...</div>
+                </div>
+
+                <div class="startup-overview__section">
+                  <h2 class="startup-detail-title">Category</h2>
+                  <p id="s-category" class="muted">—</p>
+                </div>
+
+                <div class="startup-overview__section">
+                  <h2 class="startup-detail-title">Problem this startup solves</h2>
+                  <div id="s-problem" class="startup-overview__related-card">—</div>
+                </div>
+              </div>
+
+              <aside class="startup-detail-side">
+                <div class="startup-detail-panel">
+                  <h2 class="startup-detail-title">🚀 Join / Collaborate</h2>
+                  <div class="startup-collab-box">
+                    <button type="button" class="btn btn--primary" id="s-collab-btn">Join this Startup</button>
+                    <p class="muted" id="s-collab-count" style="margin: 0">0 people want to collaborate</p>
+                  </div>
+                </div>
+
+                <div class="startup-detail-panel">
+                  <h2 class="startup-detail-title">💬 What do you think?</h2>
+                  <form id="s-comment-form" class="startup-comment-form">
+                    <textarea
+                      id="s-comment-input"
+                      placeholder="Write feedback... e.g. This is useful / Needs improvement"
+                      maxlength="300"
+                    ></textarea>
+                    <button type="submit" class="btn btn--primary">Post feedback</button>
+                  </form>
+                  <div id="s-comments" class="startup-comments-list"></div>
+                </div>
+
+                <div class="startup-detail-panel">
+                  <h2 class="startup-detail-title">🔹 Similar Ideas</h2>
+                  <div id="s-similar-ideas" class="startup-similar-list"></div>
+                </div>
+              </aside>
+            </div>
+
+            <div class="startup-overview__section">
+              <div class="startup-detail-footer-note">
+                <span class="card__label">Tip</span>
+                <p class="muted">Use feedback and collaborate interest to identify which ideas are worth building first.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/api.js?v=20260414sp9"></script>
+    <script src="/js/startup-idea.js?v=20260414sp9"></script>
+  </body>
+</html>
